@@ -1,0 +1,22 @@
+<h1>Add movie</h1>
+
+<div ng-controller="AddmovieController">
+    
+    <form name ="addmovieform">
+
+	Movie name: <input name="movieName" type="text" ng-model="movieName" required ng-minlength="1">
+        <div ng-show="addmovieform.movieName.$invalid && addmovieform.movieName.$dirty">Ei saa olla tyhjä</div>
+	<br>
+	Director: <input name="direct" type="text" ng-model="direct" required ng-minlength="1">
+        <div ng-show="addmovieform.direct.$invalid && addmovieform.direct.$dirty">Ei saa olla tyhjä</div>
+	<br>
+	Year: <input name="year" type="text" ng-model="year" required ng-minlength="4" ng-pattern="/^(?=.*?[0-9]).{4,}$/">
+        <div ng-show="addmovieform.year.$invalid && addmovieform.year.$dirty">Pelkästään numeroita ja väh 4 merkkiä</div>
+                     
+	<br>
+	Description: <input name="desc" type="text" ng-model="desc" required ng-minlength="1">
+        <div ng-show="addmovieform.desc.$invalid && addmovieform.desc.$dirty">Ei saa olla tyhjä</div>
+	<br>
+	<button ng-click="addMovie()" ng-disabled="addmovieform.$invalid">Lisää</button>
+    </form>
+</div>

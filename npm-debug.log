@@ -1,0 +1,170 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/bin/npm', 'install' ]
+info using npm@1.1.4
+info using node@v0.6.12
+verbose config file /home/retsi/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+verbose caching /home/retsi/weso/Elokuvakirjasto/package.json
+verbose loadDefaults Elokuvakirjasto@0.0.0
+verbose readDependencies: using package.json deps
+verbose where, deps [ '/home/retsi/weso/Elokuvakirjasto',
+verbose where, deps   [ 'karma-chrome-launcher',
+verbose where, deps     'karma',
+verbose where, deps     'protractor',
+verbose where, deps     'http-server',
+verbose where, deps     'bower',
+verbose where, deps     'shelljs',
+verbose where, deps     'karma-junit-reporter',
+verbose where, deps     'karma-jasmine' ] ]
+verbose from cache /home/retsi/weso/Elokuvakirjasto/package.json
+info preinstall Elokuvakirjasto@0.0.0
+verbose from cache /home/retsi/weso/Elokuvakirjasto/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'karma-chrome-launcher@^0.1.8', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'karma-chrome-launcher@^0.1.8',
+silly cache add: name, spec, args   [ 'karma-chrome-launcher@^0.1.8', null ] ]
+verbose parsed url { pathname: 'karma-chrome-launcher@^0.1.8',
+verbose parsed url   path: 'karma-chrome-launcher@^0.1.8',
+verbose parsed url   href: 'karma-chrome-launcher@^0.1.8' }
+silly cache add: name, spec, args [ 'karma-chrome-launcher',
+silly cache add: name, spec, args   '^0.1.8',
+silly cache add: name, spec, args   [ 'karma-chrome-launcher', '^0.1.8' ] ]
+verbose parsed url { pathname: '^0.1.8', path: '^0.1.8', href: '^0.1.8' }
+verbose addNamed [ 'karma-chrome-launcher', '^0.1.8' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'karma-chrome-launcher', '^0.1.8' ]
+verbose cache add [ 'karma@~0.12', null ]
+silly cache add: name, spec, args [ undefined, 'karma@~0.12', [ 'karma@~0.12', null ] ]
+verbose parsed url { pathname: 'karma@~0.12',
+verbose parsed url   path: 'karma@~0.12',
+verbose parsed url   href: 'karma@~0.12' }
+silly cache add: name, spec, args [ 'karma', '~0.12', [ 'karma', '~0.12' ] ]
+verbose parsed url { pathname: '~0.12', path: '~0.12', href: '~0.12' }
+verbose addNamed [ 'karma', '~0.12' ]
+verbose addNamed [ null, '>=0.12.0- <0.13.0-' ]
+silly name, range, hasData [ 'karma', '>=0.12.0- <0.13.0-', false ]
+verbose cache add [ 'protractor@^1.1.1', null ]
+silly cache add: name, spec, args [ undefined, 'protractor@^1.1.1', [ 'protractor@^1.1.1', null ] ]
+verbose parsed url { pathname: 'protractor@^1.1.1',
+verbose parsed url   path: 'protractor@^1.1.1',
+verbose parsed url   href: 'protractor@^1.1.1' }
+silly cache add: name, spec, args [ 'protractor', '^1.1.1', [ 'protractor', '^1.1.1' ] ]
+verbose parsed url { pathname: '^1.1.1', path: '^1.1.1', href: '^1.1.1' }
+verbose addNamed [ 'protractor', '^1.1.1' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'protractor', '^1.1.1' ]
+verbose raw, before any munging karma-chrome-launcher
+verbose url resolving [ 'https://registry.npmjs.org/', './karma-chrome-launcher' ]
+verbose url resolved https://registry.npmjs.org/karma-chrome-launcher
+http GET https://registry.npmjs.org/karma-chrome-launcher
+verbose raw, before any munging karma
+verbose url resolving [ 'https://registry.npmjs.org/', './karma' ]
+verbose url resolved https://registry.npmjs.org/karma
+http GET https://registry.npmjs.org/karma
+verbose raw, before any munging protractor
+verbose url resolving [ 'https://registry.npmjs.org/', './protractor' ]
+verbose url resolved https://registry.npmjs.org/protractor
+http GET https://registry.npmjs.org/protractor
+verbose cache add [ 'http-server@^0.6.1', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'http-server@^0.6.1',
+silly cache add: name, spec, args   [ 'http-server@^0.6.1', null ] ]
+verbose parsed url { pathname: 'http-server@^0.6.1',
+verbose parsed url   path: 'http-server@^0.6.1',
+verbose parsed url   href: 'http-server@^0.6.1' }
+silly cache add: name, spec, args [ 'http-server', '^0.6.1', [ 'http-server', '^0.6.1' ] ]
+verbose parsed url { pathname: '^0.6.1', path: '^0.6.1', href: '^0.6.1' }
+verbose addNamed [ 'http-server', '^0.6.1' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'http-server', '^0.6.1' ]
+verbose cache add [ 'bower@^1.3.1', null ]
+silly cache add: name, spec, args [ undefined, 'bower@^1.3.1', [ 'bower@^1.3.1', null ] ]
+verbose parsed url { pathname: 'bower@^1.3.1',
+verbose parsed url   path: 'bower@^1.3.1',
+verbose parsed url   href: 'bower@^1.3.1' }
+silly cache add: name, spec, args [ 'bower', '^1.3.1', [ 'bower', '^1.3.1' ] ]
+verbose parsed url { pathname: '^1.3.1', path: '^1.3.1', href: '^1.3.1' }
+verbose addNamed [ 'bower', '^1.3.1' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'bower', '^1.3.1' ]
+verbose cache add [ 'shelljs@^0.2.6', null ]
+silly cache add: name, spec, args [ undefined, 'shelljs@^0.2.6', [ 'shelljs@^0.2.6', null ] ]
+verbose parsed url { pathname: 'shelljs@^0.2.6',
+verbose parsed url   path: 'shelljs@^0.2.6',
+verbose parsed url   href: 'shelljs@^0.2.6' }
+silly cache add: name, spec, args [ 'shelljs', '^0.2.6', [ 'shelljs', '^0.2.6' ] ]
+verbose parsed url { pathname: '^0.2.6', path: '^0.2.6', href: '^0.2.6' }
+verbose addNamed [ 'shelljs', '^0.2.6' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'shelljs', '^0.2.6' ]
+verbose cache add [ 'karma-junit-reporter@^0.2.2', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'karma-junit-reporter@^0.2.2',
+silly cache add: name, spec, args   [ 'karma-junit-reporter@^0.2.2', null ] ]
+verbose parsed url { pathname: 'karma-junit-reporter@^0.2.2',
+verbose parsed url   path: 'karma-junit-reporter@^0.2.2',
+verbose parsed url   href: 'karma-junit-reporter@^0.2.2' }
+silly cache add: name, spec, args [ 'karma-junit-reporter',
+silly cache add: name, spec, args   '^0.2.2',
+silly cache add: name, spec, args   [ 'karma-junit-reporter', '^0.2.2' ] ]
+verbose parsed url { pathname: '^0.2.2', path: '^0.2.2', href: '^0.2.2' }
+verbose addNamed [ 'karma-junit-reporter', '^0.2.2' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'karma-junit-reporter', '^0.2.2' ]
+verbose cache add [ 'karma-jasmine@~0.2', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'karma-jasmine@~0.2',
+silly cache add: name, spec, args   [ 'karma-jasmine@~0.2', null ] ]
+verbose parsed url { pathname: 'karma-jasmine@~0.2',
+verbose parsed url   path: 'karma-jasmine@~0.2',
+verbose parsed url   href: 'karma-jasmine@~0.2' }
+silly cache add: name, spec, args [ 'karma-jasmine', '~0.2', [ 'karma-jasmine', '~0.2' ] ]
+verbose parsed url { pathname: '~0.2', path: '~0.2', href: '~0.2' }
+verbose addNamed [ 'karma-jasmine', '~0.2' ]
+verbose addNamed [ null, '>=0.2.0- <0.3.0-' ]
+silly name, range, hasData [ 'karma-jasmine', '>=0.2.0- <0.3.0-', false ]
+verbose raw, before any munging http-server
+verbose url resolving [ 'https://registry.npmjs.org/', './http-server' ]
+verbose url resolved https://registry.npmjs.org/http-server
+http GET https://registry.npmjs.org/http-server
+verbose raw, before any munging bower
+verbose url resolving [ 'https://registry.npmjs.org/', './bower' ]
+verbose url resolved https://registry.npmjs.org/bower
+http GET https://registry.npmjs.org/bower
+verbose raw, before any munging shelljs
+verbose url resolving [ 'https://registry.npmjs.org/', './shelljs' ]
+verbose url resolved https://registry.npmjs.org/shelljs
+http GET https://registry.npmjs.org/shelljs
+verbose raw, before any munging karma-junit-reporter
+verbose url resolving [ 'https://registry.npmjs.org/', './karma-junit-reporter' ]
+verbose url resolved https://registry.npmjs.org/karma-junit-reporter
+http GET https://registry.npmjs.org/karma-junit-reporter
+verbose raw, before any munging karma-jasmine
+verbose url resolving [ 'https://registry.npmjs.org/', './karma-jasmine' ]
+verbose url resolved https://registry.npmjs.org/karma-jasmine
+http GET https://registry.npmjs.org/karma-jasmine
+ERR! Error: failed to fetch from registry: karma-chrome-launcher
+ERR!     at /usr/share/npm/lib/utils/npm-registry-client/get.js:139:12
+ERR!     at cb (/usr/share/npm/lib/utils/npm-registry-client/request.js:31:9)
+ERR!     at Request._callback (/usr/share/npm/lib/utils/npm-registry-client/request.js:136:18)
+ERR!     at Request.callback (/usr/lib/nodejs/request/main.js:119:22)
+ERR!     at Request.<anonymous> (/usr/lib/nodejs/request/main.js:212:58)
+ERR!     at Request.emit (events.js:88:20)
+ERR!     at ClientRequest.<anonymous> (/usr/lib/nodejs/request/main.js:412:12)
+ERR!     at ClientRequest.emit (events.js:67:17)
+ERR!     at HTTPParser.onIncoming (http.js:1261:11)
+ERR!     at HTTPParser.onHeadersComplete (http.js:102:31)
+ERR! You may report this log at:
+ERR!     <http://bugs.debian.org/npm>
+ERR! or use
+ERR!     reportbug --attach /home/retsi/weso/Elokuvakirjasto/npm-debug.log npm
+ERR! 
+ERR! System Linux 3.5.0-54-generic
+ERR! command "node" "/usr/bin/npm" "install"
+ERR! cwd /home/retsi/weso/Elokuvakirjasto
+ERR! node -v v0.6.12
+ERR! npm -v 1.1.4
+ERR! message failed to fetch from registry: karma-chrome-launcher
+verbose exit [ 1, true ]

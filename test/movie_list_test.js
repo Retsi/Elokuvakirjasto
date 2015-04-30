@@ -5,22 +5,45 @@ describe('Movie list', function(){
 
   	beforeEach(function(){
   		// Lisää moduulisi nimi tähän
-    	module('MyAwesomeModule');
+    	module('MovieApp');
 
-    	FirebaseServiceMock = (function(){
-			return {
-				// Toteuta FirebaseServicen mockatut metodit tähän
-			}
-		})();
+    	FirebaseServiceMock = (function () {
+            var movies = [
+                {
+                    text: 'Elokuva',
+                    direct: 'Mies',
+                    year: '2005',
+                    desc: 'Ei'
+                },
+                {
+                    text: 'Toinen elokuva',
+                    direct: 'Nainen',
+                    year: '2003',
+                    desc: 'Joo'
+                }
+            ]
+            return {
+                // Toteuta FirebaseServicen mockatut metodit tähän
+                addMovie: function (name, director, year, desc) {
+                    movies.push(name, director, year, desc);
+                },
+                getMovies: function () {
+                    return movies;
+                }
+            }
+        })();
 
 		// Lisää vakoilijat
 	    // spyOn(FirebaseServiceMock, 'jokuFunktio').and.callThrough();
+            
+        spyOn(FirebaseServiceMock, 'addMovie').and.callThrough();
+        spyOn(FirebaseServiceMock, 'getMovies').and.callThrough();
 
     	// Injektoi toteuttamasi kontrolleri tähän
 	    inject(function($controller, $rootScope) {
 	      scope = $rootScope.$new();
 	      // Muista vaihtaa oikea kontrollerin nimi!
-	      controller = $controller('MyAwesomeController', {
+	      controller = $controller('ListmovieController', {
 	        $scope: scope,
 	        FirebaseService: FirebaseServiceMock
 	      });
